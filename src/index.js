@@ -10,7 +10,7 @@ const sayHello = name => "Hello, " + name + "!";
 console.log(sayHello("Andrew"));
 
 
-$("#title").css("color", "white");
+$("#title").css("color", "grey");
 $("#title").html("Hello, Andrew!");
 
 $('body').css("background", randomColor());
