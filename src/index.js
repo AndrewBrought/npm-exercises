@@ -11,6 +11,6 @@ console.log(sayHello("Andrew"));
 
 
 $("#title").css("color", "white");
-$("#title").html("Hello, Andrew!
+$("#title").html("Hello, Andrew!");
 
 $('body').css("background", randomColor());
