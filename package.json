@@ -1,0 +1,32 @@
+{
+  "name": "new",
+  "version": "1.0.0",
+  "main": "index.js",
+  "dependencies": {
+    "@babel/core": "^7.9.6",
+    "@babel/preset-env": "^7.9.6",
+    "babel-loader": "^8.1.0",
+    "babel-preset-env": "^1.7.0",
+    "jquery": "^3.5.1",
+    "randomcolor": "^0.5.4",
+    "webpack": "^4.43.0"
+  },
+  "devDependencies": {
+    "webpack-cli": "^3.3.11"
+  },
+  "scripts": {
+    "build": "webpack",
+    "build:watch": "webpack --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AndrewBrought/npm-exercises.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AndrewBrought/npm-exercises/issues"
+  },
+  "homepage": "https://github.com/AndrewBrought/npm-exercises#readme",
+  "description": ""
+}
