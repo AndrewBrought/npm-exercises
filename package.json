@@ -16,7 +16,8 @@
   },
   "scripts": {
     "build": "webpack",
-    "build:watch": "webpack --watch"
+    "build:watch": "webpack --watch",
+    "build:production": "webpack -p"
   },
   "repository": {
     "type": "git",
