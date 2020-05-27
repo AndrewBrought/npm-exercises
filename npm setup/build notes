@@ -1,0 +1,84 @@
+create empty project on GitHub...
+
+Create local repo first (in IDE)
+
+create a commit FIRST in local...
+
+1. create new static web project
+
+2. Create .gitignore
+add:
+
+public/main.js
+*.map
+node_modules
+.idea/*
+*.iml
+
+3. Go to terminal and type: git init   -this creates a git repo
+then:
+git add .
+git commit -m "add .gitignore"
+
+4. Go to git hub and pus an existing repo from command line:
+git remote add origin url
+git -u origin master
+(double check doc. on git for clarity)
+
+(just one way of doing this that could be depricated in a month. Good to understand the basic path though)
+install dependencies
+@babel/core = nuts and bolts of babel tech.  Main dependency, how bable is able to transpile
+babel-loader = allows webpack to use babel
+@babel/preset-env = specifies how code should be transpiled
+webpack = the module bundler
+webpack-cli = a required dependency to issue webpack commands from the command line
+
+TO Install: npm i @babel/core babel-loader @babel/preset-env webpack webpack-cli (enter)
+(This allows us to install multiple libraries at once)
+
+5. Check depdencies that packages/libraries are all there
+
+6. create webpack.config.js to root of project (this allows us to modify and customize webpack)
+
+7. Need to tell webpack what the entry point is of our project based on a single file to know what stuff to roll up in a JS file...
+entry: './src/index.js',
+The output will create a public folder and add a' main.js'
+
+The other syntax is saying that when you roll that stuff up, transpile it with babel
+
+8. add folder called "src", add file "index.js"
+
+9. Inside of index.js file console.log("Hello World!");
+
+10. Add a command to list of commands in package.json file..."scripts" is where we can define commands
+"test" is place to add testing modules
+We want to add "Build": "webpack" - when we run this in the terminal it starts the webpack bundling process (npm run build) - webpack, when not defined, renders code in production mode.  Better for us to specify what mode we want bundled in webpack
+
+to do this ... go to packags.json in "scripts" and set "build" to : "webpack --mode=development"
+
+
+
+================================= NPM LESSON CORRECTIONS
+Should install the following dependencies...
+  @babel/core ------- the main dependency for Babel containing the ability to transpile code
+  babel-loader ------ allows Webpack to use Babel
+  @babel/preset-env - specifies how code should be transpiled (ES2015)
+  webpack ----------- the module bundler
+  webpack-cli ------- a required dependency to issue Webpack commands from the command line
+Add a flag to the build command that specifies production or development mode...
+  "build": "webpack --mode=development"
+    or
+  "build": "webpack --mode=production"
+  ======================================
+
+
+--ASIDE -- go to terminal create another empty directory
+
+npm init -y
+npm i all directories
+
+(distinction between developer dependency and regular dependency is how you want it run/behave in production vs development...webpack-cli is probably something not needed in production--END--
+
+
+
+
