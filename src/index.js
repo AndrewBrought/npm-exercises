@@ -4,9 +4,9 @@ const $ = require('jquery');
 
 const randomColor = require('randomColor');
 
-const sayHello = name => "Hello, " + name + "!";
+// const sayHello = name => "Hello, " + name + "!";
 
-
+const sayHello = require('./say-hello');
 console.log(sayHello("Andrew"));
 
 

@@ -56,7 +56,10 @@ We want to add "Build": "webpack" - when we run this in the terminal it starts t
 
 to do this ... go to packags.json in "scripts" and set "build" to : "webpack --mode=development"
 
-
+Inside index.js can write a test function: const sayHello = () => `Hello, ${name}`;
+console.log(sayHello("Andrew");
+In terminal run: npm run build
+Go to bottom or main.js (after you'set it to develop) to see how our code has been transpiled.  Then, we can also check our console in the browser (make sure main.js script is properly attached to index.html)
 
 ================================= NPM LESSON CORRECTIONS
 Should install the following dependencies...
@@ -79,6 +82,6 @@ npm i all directories
 
 (distinction between developer dependency and regular dependency is how you want it run/behave in production vs development...webpack-cli is probably something not needed in production--END--
 
-
+** Modules by default run in strict mode
 
 
